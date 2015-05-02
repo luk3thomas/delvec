@@ -1,0 +1,22 @@
+{
+  "name": "delvec",
+  "version": "0.0.50",
+  "description": "A small curried library for fetching properties from objects.",
+  "main": "delvec.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/luk3thomas/delvec.git"
+  },
+  "scripts": {
+    "test": "./node_modules/.bin/jasmine-node --coffee spec/",
+    "testw": "./node_modules/.bin/jasmine-node --color --autotest --coffee spec/ --watch index.coffee",
+    "prepublish": "npm run compile",
+    "compile": "./node_modules/.bin/coffee -p -c index.coffee > delvec.js"
+  },
+  "author": "Luke Thomas",
+  "license": "ISC",
+  "devDependencies": {
+    "coffee-script": "^1.9.2",
+    "jasmine-node": "^1.14.5"
+  }
+}
