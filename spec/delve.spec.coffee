@@ -1,7 +1,7 @@
 describe "delvec", ->
 
   beforeEach ->
-    @delvec = require "../"
+    @delvec = require "../index.coffee"
     @object =
       foo:
         bar:
